@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 3 assignment</title>
+  <script src="login.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <script src="login.js"></script>
+   <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" 
+           onclick="Login()">Log in</button>
+          <button type="button" class="toggle-btn" 
+          onclick="Register()">Register</button>
+      </div>
+      <div class="social-icons">
+        <img src="images/fb.png">
+        <img src="images/tw.png">
+        <img src="images/gp.png">
+       </div>
+       <form id="Login" class="input-group">
+        <input type="Email" class="input-field" placeholder="Email" id="username" required>
+        <input type="text" class="input-field" placeholder="Enter Password" id="password" required>
+        <input type="checkbox" class="check-box"><span>Remember Password</span>
+        <button type="submit" value="login" class="submit-btn">Log in</button>
+       </form>
+       <form id="Register" class="input-group">
+        <input type="text" class="input-field" placeholder="First Name" required>
+        <input type="text" class="input-field" placeholder="Last Name" required>
+        <input type="text" class="input-field" placeholder="Phone Number" required>
+        <input type="Email" class="input-field" placeholder="Enter Email" required>
+        <label   for ="Gender">Gender</label>
+        <select id="Gender">
+          <option value="Gender">select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <input class="rity"  type="date">
+       <div class="colour">
+        <label>color</label>
+        <input type="color" name="colorfield"/>
+      </div>
+        <button type="submit" class="submit-btn">Register</button>
+       </form>
+      </div>
+   </div>
+    <script>
+      var x = document.getElementById("Login");
+      var y = document.getElementById("Register");
+      var z = document.getElementById("btn");
+      
+      function Register() {
+        x.style.left ="-400px";
+        y.style.left ="50px";
+        z.style.left ="110px";
+        
+      }
+      function Login() {
+        x.style.left ="50px";
+        y.style.left ="450px";
+        z.style.left ="0";
+        
+      }
+      </script>
+   </body>
+</html>
