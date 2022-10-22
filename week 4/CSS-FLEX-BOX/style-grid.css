@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+}
+body {
+  background-color: white;
+}
+main {
+  display: grid;
+  grid-template-areas:
+  'a a a b b'
+  'c c d d d'
+  'c c e e e';
+  gap: 10px;
+  margin: auto;
+  width: 85vh;
+}
+main div {
+  padding: 2cm;
+  text-align: center;
+}
+.item-a {
+  background-color: red;
+  grid-area: a;
+  height: 70px;
+  color: white;
+}
+.rity {
+  font-size: 25px;
+}
+.item-b {
+  background-color:yellow;
+  grid-area: b;
+  height: 70px;
+  color: white;
+}
+.item-c {
+  background-color:green;
+  grid-area: c;
+  height: 210px;
+  color: white;
+}
+.item-d {
+  background-color: blue;
+  grid-area: d;
+  height: 30px;
+  color: white;
+}
+.item-e {
+  background-color: lightblue;
+  grid-area: e;
+  height: 30px;
+  color: white;
+}
